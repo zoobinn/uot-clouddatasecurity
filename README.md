@@ -3,8 +3,8 @@
 AWS & GCP
 
 Resources for further Readings (IN Cloud provider context):
-[AWS Well Architecture Framework - Security Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
-[Google Cloud Security Foundations](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf)
+[AWS Well Architecture Framework - Security Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf):
+[Google Cloud Security Foundations](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf):
 
 Security Hands-on Topics:
 
