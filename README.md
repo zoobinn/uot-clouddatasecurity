@@ -3,15 +3,14 @@
 AWS & GCP
 
 Resources for further Readings (IN Cloud provider context):
-[AWS Well Architecture Framework - Security Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf):
-[Google Cloud Security Foundations](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf):
+[AWS Well Architecture Framework - Security Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
+[Google Cloud Security Foundations](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf)
 
 Security Hands-on Topics:
 
-  1- AWS - IAM, Groups and Policies
-  2- AWS - S3 with Identity and resource based Policies
-  3- GCP - JWT, API and Service 2 Service Security - Python (Secret Storage, Firestore, CloudFunctions)
-  4- 
+- AWS: IAM, Groups and Policies
+- AWS: S3 with Identity and resource based Policies
+- GCP: JWT, API and Service 2 Service Security - Python (Secret Storage, Firestore, CloudFunctions)
 
 # Requirements!
 
