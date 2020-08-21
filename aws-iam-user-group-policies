@@ -1,0 +1,38 @@
+# Create User A
+aws iam create-user --user-name `UserA`
+
+# Create User B
+aws iam create-user --user-name `UserB`
+
+# Create Group `Admins`
+aws iam create-group --group-name Admins
+
+# Add User A to Group `Admins`
+aws iam add-user-to-group --user-name UserA --group-name Admins
+
+# Add User B to Group `Admins`
+aws iam add-user-to-group --user-name UserB --group-name Admins
+
+# Attached AWS Managed Policy AdministratorAccess to Group `Admins`
+aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --group-name Admins
+
+# Remove User B From Group `Admins`
+aws iam remove-user-from-group --user-name UserB --group-name Admins
+
+# Create Group `Sensitive3760ProdGroup`
+aws iam create-group --group-name Sensitive3760ProdGroup
+
+# create Custom Policy crafted in Policy.json File
+aws iam create-policy --policy-name sensitive3760-prod-s3access --policy-document policy.json
+
+
+aws iam remove-user-from-group --user-name UserB --group-name Admins
+aws iam create-group --group-name Sensitive3760ProdGroup
+aws iam create-policy --policy-name Sensitive3760ProdObjectsRWD --policy-document file://policy.json
+
+aws iam attach-group-policy --policy-arn "arn:aws:iam::092107233448:policy/Sensitive3760ProdObjectsRWD" --group-name Sensitive3760ProdGroup
+aws iam add-user-to-group --user-name UserB --group-name Sensitive3760ProdGroup
+
+
+
+
