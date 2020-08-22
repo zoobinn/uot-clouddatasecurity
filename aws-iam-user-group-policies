@@ -23,14 +23,16 @@ aws iam remove-user-from-group --user-name UserB --group-name Admins
 aws iam create-group --group-name Sensitive3760ProdGroup
 
 # create Custom Policy crafted in Policy.json File
-aws iam create-policy --policy-name sensitive3760-prod-s3access --policy-document policy.json
-
-
 aws iam remove-user-from-group --user-name UserB --group-name Admins
 aws iam create-group --group-name Sensitive3760ProdGroup
-aws iam create-policy --policy-name Sensitive3760ProdObjectsRWD --policy-document file://policy.json
 
-aws iam attach-group-policy --policy-arn "arn:aws:iam::092107233448:policy/Sensitive3760ProdObjectsRWD" --group-name Sensitive3760ProdGroup
+# create Custom Policy crafted in Policy.json File (identitybasedpolicy)
+aws iam create-policy --policy-name Sensitive3760ProdObjectsRWD --policy-document file://identitybasedpolicyS3IAM.json
+
+# Attach the created custom Policy to the Group
+aws iam attach-group-policy --policy-arn "arn:aws:iam::[ACCOUNTNUMBER]:policy/Sensitive3760ProdObjectsRWD" --group-name Sensitive3760ProdGroup
+
+# Add user B to the Group
 aws iam add-user-to-group --user-name UserB --group-name Sensitive3760ProdGroup
 
 
