@@ -40,7 +40,7 @@ aws s3api create-bucket --bucket sensitive3760-prod-a --region ca-central-1
 aws s3api create-bucket --bucket sensitive3760-prod-b --region ca-central-1
 
 # Attach the created custom Resource based Policy with Explicit Deny to S3 Bucket (via S3) 
-aws s3api put-bucket-policy --bucket sensitive3760-prod-b --policy file://resourcebaseds3bucketpolicy.json
+aws s3api put-bucket-policy --bucket sensitive3760-prod-b --policy file://resourcebasedS3Bucketpolicy.json
 
 
 
