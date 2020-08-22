@@ -6,7 +6,7 @@
             "NotPrincipal": {
                 "AWS": [
                     "arn:aws:iam::[ACCOUNTNUMBER]:root",
-                    "arn:aws:iam::[ACCOUNTNUMBER]:user/[yourcurrentaccount]",
+                    "arn:aws:iam::[ACCOUNTNUMBER]:user/[yourcurrentusername]",
                 ]
             },
             "Action": "s3:*",
