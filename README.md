@@ -20,13 +20,12 @@ Security Hands-on Topics:
 
 Cloud Data Privacy & Security Highlights:
 
-> Security OF Cloud does not equal Security IN Cloud
-> Manage and Maintain end to end Data Lifecycle safegaurds in Cloud
-> Leverage Cryptography and Cloud Services to secure data in Transit, at Rest, in Use. 
-> Schedule Data Retentions and Deletions
-> Add Defence in Depth with Controls in Layers
-> Access Control with Least Privillege when thinking both IAM and Networking in design and operation.
-> Think Identity, Authentication, Authorization, Audit for ANY thing in Cloud
+> Security OF the Cloud does not equal Security IN the Cloud.
+> Need to manage & maintain Data Lifecycle with Security in Mind.
+> Leverage Cryptography, Service Configurations and access to Control to secure data in Transit, at Rest, in Use. 
+> Think Defence in Depth with Controls in Layers (not in Parallel).
+> Stick to the Least Privillege Principle when thinking IAM and Networking in both design and operations.
+> Think Identity, Authentication, Authorization, Audit for ANY thing in the Cloud or out of the Cloud.
 
 ### Installation
 
