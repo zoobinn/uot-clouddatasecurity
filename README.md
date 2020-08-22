@@ -11,7 +11,7 @@ Security Hands-on Topics:
 2. AWS: S3 with Identity and resource based Policies
 3. GCP: JWT, API and Service 2 Service Security - Python (Secret Storage, Firestore, CloudFunctions)
 
-# Requirements!
+# Hands-on Requirements!
 
   - AWS Account Admin Access
   - GCP Project Owner Access
