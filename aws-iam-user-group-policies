@@ -29,12 +29,18 @@ aws iam create-group --group-name Sensitive3760ProdGroup
 # create Custom Policy crafted in Policy.json File (identitybasedpolicy)
 aws iam create-policy --policy-name Sensitive3760ProdObjectsRWD --policy-document file://identitybasedpolicyS3IAM.json
 
-# Attach the created custom Policy to the Group
+# Attach the created custom Identity based Policy to the Group (via IAM)
 aws iam attach-group-policy --policy-arn "arn:aws:iam::[ACCOUNTNUMBER]:policy/Sensitive3760ProdObjectsRWD" --group-name Sensitive3760ProdGroup
 
 # Add user B to the Group
 aws iam add-user-to-group --user-name UserB --group-name Sensitive3760ProdGroup
 
+# Create s3 Buckets
+aws s3api create-bucket --bucket sensitive3760-prod-a --region ca-central-1
+aws s3api create-bucket --bucket sensitive3760-prod-b --region ca-central-1
+
+# Attach the created custom Resource based Policy with Explicit Deny to S3 Bucket (via S3) 
+aws s3api put-bucket-policy --bucket sensitive3760-prod-b --policy file://resourcebaseds3bucketpolicy.json
 
 
 
