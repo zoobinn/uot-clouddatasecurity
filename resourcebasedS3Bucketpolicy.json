@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "NotPrincipal": {
+                "AWS": [
+                    "arn:aws:iam::[ACCOUNTNUMBER]:root",
+                    "arn:aws:iam::[ACCOUNTNUMBER]:user/[yourcurrentusername]",
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::sensitive3760-prod-b",
+                "arn:aws:s3:::sensitive3760-prod-b/*"
+            ]
+        }
+    ]
+}
