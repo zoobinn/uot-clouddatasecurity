@@ -1,7 +1,7 @@
 import os
 import flask
 import json
-import python_jwt as jwt, jwcrypto.jwk as jwk, time
+jwcrypto.jwk as jwk, time
 from google.cloud import firestore
 from google.cloud import secretmanager
 from jose import jwt
