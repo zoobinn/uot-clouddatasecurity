@@ -1,0 +1,6 @@
+# Function dependencies, for example:
+# package>=version
+jwcrypto
+google-cloud-firestore
+google-cloud-secret-manager
+python-jose
