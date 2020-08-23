@@ -7,9 +7,9 @@ AWS & GCP further Readings - IN Cloud Security with provider context:
 
 Security Hands-on Topics:
 
-1. AWS: IAM, Groups and Policies
-2. AWS: S3 with Identity and resource based Policies
-3. GCP: JWT, API and Service 2 Service Security - Python (Secret Storage, Firestore, CloudFunctions)
+1. AWS: Creation of IAM, User, Groups and Policies Examples
+2. AWS: Creating S3 Buckets with IAM Identity and Bucket resource based Policies, Example of applying the Least Privillege principle in both Policy types.
+3. GCP: Implementing JWT/JWS RS256 - Securing Public API endpoints by restricting Service 2 Service access with Origin Athenticity verification - Python 3.7 (Secret Storage, Firestore, CloudFunctions)
 
 # Hands-on Requirements!
 
