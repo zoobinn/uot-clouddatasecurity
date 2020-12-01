@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Id": "arn:aws:sqs:us-east-2:085396928697:advance1",
+  "Statement": [
+    {
+      "Sid": "Sid1472529596416",
+      "Effect": "Deny",
+      "NotPrincipal": {
+        "AWS": [
+          "arn:aws:iam::085396928697:root",
+          "arn:aws:iam::085396928697:user/doorbin"
+        ]
+      },
+      "Action": "SQS:*",
+      "Resource": "arn:aws:sqs:us-east-2:085396928697:advance1"
+    }
+  ]
+}
