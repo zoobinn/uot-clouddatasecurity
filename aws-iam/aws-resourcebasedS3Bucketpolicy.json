@@ -11,7 +11,7 @@
             },
             "Action": "s3:*",
             "Resource": [
-                 "arn:aws:s3:::sensitive3760-prod-projecta"
+                 "arn:aws:s3:::sensitive3760-prod-[placeyourexactbucketnamehere]"
             ]
         }
     ]
