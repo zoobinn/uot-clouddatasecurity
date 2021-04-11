@@ -1,4 +1,4 @@
-# Hands-on - Cloud Data Security
+# Hands-on Notes - Security  - 3760 - Cloud Technologies for Big Data, Machine Learning & Artificial Intelligence
 
 AWS & GCP further Readings - IN Cloud Security with provider context:
 
